@@ -1,0 +1,23 @@
+.Appointment{
+    background-color: rgb(250, 248, 248);
+    height:100%;
+    width:100%;
+
+}
+.appointment-section1{
+    width:100%;
+    height:100%;
+    padding-left:100px;
+    display: flex;
+}
+.giff1{
+    position:absolute;
+    right:30px;
+}
+.appointment-form{
+    margin:100px;
+}
+
+.section6{
+    margin:100px;
+}

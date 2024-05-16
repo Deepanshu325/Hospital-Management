@@ -1,0 +1,22 @@
+.reg{
+    margin:auto;
+justify-content: center;
+width:50%;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+
+    
+}
+.reg input{
+    width:50%;
+
+}
+
+.inpu{
+    height:30px;
+    padding-bottom:15px;
+    gap:10px;
+    display: flex;
+}

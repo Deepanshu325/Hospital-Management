@@ -1,0 +1,22 @@
+.Imgcard img{
+    width:280px;
+    height:200px;
+
+}
+.Imgcard{
+    width:295px;
+    height:240px;
+}
+.Imgcard button{
+    width:200px;
+    position:relative;
+    top:180px;
+    left:37px;
+    border-radius: 12px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+

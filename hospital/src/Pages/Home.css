@@ -1,0 +1,58 @@
+.Home{
+    width:100%;
+    height:100%;
+    background-color: rgb(250, 248, 248);
+
+}
+.Home img{
+    width:400px;
+
+}
+
+.section1{
+    display: flex;
+    flex-wrap: reverse;
+}
+
+.cardd{
+    width:45%;
+    display: flex;
+    padding:100px;
+}
+.gif{
+    width:40%;
+    padding-top:75px;
+}
+.section2{
+    padding-left: 100px;
+    margin-top:135px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.cardd2{
+    width:30%;
+    display: flex;
+    padding-left:100px;
+    padding-top: 70px;;
+}
+.gif2{
+    width:55%;
+    padding-top:75px;
+
+}
+.section2 img{
+    width:350px;
+    height:300px;
+}
+.section3{
+    margin-top:135px;
+    padding:100px;
+
+}
+.imgcards{
+    display:flex;
+}
+.section4{
+    margin-top:130px
+}
+

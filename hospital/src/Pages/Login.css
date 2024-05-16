@@ -1,0 +1,48 @@
+.Login1{
+    margin: auto;
+    width:100%;
+    height:100%;
+    
+
+}
+.upper{
+margin:auto;
+justify-content: center;
+width:50%;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.upper p{
+    
+}
+.Lower{
+    margin:auto;
+justify-content: center;
+width:50%;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+    
+}
+.Lower input{
+    width:100%;
+
+}
+.inp{
+    padding-bottom:15px;
+}
+#login-button{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:4px;
+    padding-bottom:4px;
+    background-color: blueviolet;
+    color: antiquewhite;
+    border-radius: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}

@@ -10,18 +10,31 @@
 }
 
 .section1{
+    width:100%;
     display: flex;
-    flex-wrap: reverse;
+    flex-wrap:wrap;
 }
 
 .cardd{
     width:45%;
+    height:100%;
     display: flex;
     padding:100px;
 }
+@media (max-Width: 1280px) {
+    
+    .cardd{
+        width:100%;
+        color:orange;
+
+    }
+  }
 .gif{
-    width:40%;
-    padding-top:75px;
+    width:39%;
+    height:100%;
+    padding-top:100px;
+    padding-bottom:100px;
+
 }
 .section2{
     padding-left: 100px;
@@ -53,6 +66,6 @@
     display:flex;
 }
 .section4{
-    margin-top:130px
+    margin-top:130px;
 }
 

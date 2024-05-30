@@ -1,0 +1,31 @@
+.infocard{
+    
+    display: flex;
+}
+.box {
+    width:200px;
+    height:40px;
+}
+
+.box select{
+    width:100px;
+    height:20px;
+}
+#reject{
+    color:red;
+}
+.status{
+    width:200px;
+    height:40px;
+    padding-top:16px;
+}
+#select{
+    color:green;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.status select{
+    color: red;
+    width:90px; 
+
+  }

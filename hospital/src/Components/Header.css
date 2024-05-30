@@ -1,23 +1,31 @@
-nav{
+.Navbar{
     width:100%;
     height:50px;
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(250, 248, 248);
-}
 
+}
 .Nav-list{
-    width:59.8%;
+    width:48rem;
+    height: 100%;
     text-align: center;
     justify-content: center;
     
 }
 .Name{
-    margin: 10px;
-    width:40%;
-    height:30px;
+width:30rem;
+    padding-left:1%;
     
+    height:100%;
+}
+.Login{
+    width:5rem;
+    justify-content: center;
+    align-content: center;
+    height:50px;
+
 }
 .Name img{
     height:30px;
@@ -35,18 +43,8 @@ nav{
     text-decoration: none;
     color:black;
 }
-.Navbar{
-    display: flex;
-    width:70%;
-    margin:2px;
 
-}
-.Login{
-    position:absolute;
-    margin: 12px;
-    right:20px;
 
-}
 #login{
     width:75px;
     height:30px;
@@ -56,4 +54,5 @@ nav{
     color: aliceblue;
     border-radius: 14px;
     cursor: pointer;
+    border: solid black;
 }

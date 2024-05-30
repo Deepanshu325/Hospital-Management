@@ -1,0 +1,19 @@
+.card{
+    width:295px;
+    height:350px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px 2px grey;
+}
+.image{
+    width:100%;
+    height:45%;
+    padding-top:14px;
+    text-align: center;
+}
+.image img{
+    border-radius: 50%;
+
+}
+.details{
+    padding-left:12px;
+}

@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <nav>
+
       <div className="Navbar">
         <div className="Name">
           <img src='https://t4.ftcdn.net/jpg/05/55/46/25/240_F_555462560_Wp4odSeE4lSsOXOlVXMHdkerJbW6VMR4.jpg' alt='logo' />
@@ -22,7 +22,6 @@ const Header = () => {
        <Link to="login">  <button id="login">Login</button> </Link> 
         </div>
       </div>
-    </nav>
    
   )
 }

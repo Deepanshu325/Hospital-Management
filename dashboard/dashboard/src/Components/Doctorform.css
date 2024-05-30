@@ -1,0 +1,38 @@
+.Doctorform{
+    width:100%;
+
+}
+.doc_img{
+    text-align: center;
+}
+.doc_form{
+    width:95%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.doc_form input{
+    height:20px;
+    width: 100%;;
+    margin:10px;
+
+}
+.doc_form select{
+    height:27px;
+    width:101%;
+    margin:10px;
+
+}
+
+.inp{
+    width:82%;
+    
+}
+#regdoc{
+    margin:10px;
+    height:30px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 2px grey;
+}

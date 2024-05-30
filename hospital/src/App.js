@@ -7,6 +7,7 @@ import Appointment from './Pages/Appointment';
 import Aboutus from './Pages/Aboutus';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -14,10 +15,22 @@ function App() {
 
        <Header/>
 
+       <ToastContainer
+position="top-center"
+autoClose={4000}
+limit={1}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="colored"
+/>
 
       
       <Routes>
-        
         <Route path="/" element={<Home/>}/>
         <Route path="/appointment" element={<Appointment/>}/>
         <Route path="/aboutus" element={<Aboutus/>}/>

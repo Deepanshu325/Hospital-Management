@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import Footer from '../Components/Footer'
 import "./Register.css"
 import axios from 'axios'
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
   
@@ -19,7 +21,7 @@ const Register = () => {
   const navigate = useNavigate();
 
 
-  const register = ()=>{
+  const register =()=>{
 
     try{
     axios.post("http://localhost:5000/register",
@@ -35,7 +37,15 @@ const Register = () => {
 
       }
     );
-    alert("Registration Sucessfull")
+    toast.success('Registration Sucessfull', {
+      position: "top-center",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "colored",
+      });
     setfirstname("")
     setlastname("")
     setemail("")
@@ -50,6 +60,15 @@ const Register = () => {
     catch{
 
       console.log("registration not sucessfull")
+      toast.error('Enter Correct Details', {
+        position: "top-center",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "colored",
+        });
 
     }
   

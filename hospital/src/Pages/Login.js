@@ -3,27 +3,52 @@ import "./Login.css"
 import { Link, useNavigate } from 'react-router-dom'
 import Footer from '../Components/Footer'
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
   const [Email, setemail] = useState("");
   const[Password, setpassword] = useState("");
   const navigate = useNavigate();
+ 
+
   const login = async ()=>{
     try{
     let Target =  await axios.post("http://localhost:5000/login",{Email,Password }
       );
       if(Target.data.result === 'no user found'){
-      alert("User not Found");
+        toast.error('User not Found', {
+          position: "top-center",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: "colored",
+          });
       }
       else{
-        alert("Login sucessfull")
+        toast.success('Login sucessfully', {
+          position: "top-center",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: "colored",
+          });
+       localStorage.setItem("user",JSON.stringify((Target.data)));
+       
+       localStorage.setItem("token",JSON.stringify((Target.data.auth)));
         navigate("/appointment")
 
       }
     }catch(error){
       console.log("not found ")
      }
+
+     
       
     }
   

@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import './Feedbackform.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
+import {toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
 
 const Feedback = () => {
 
@@ -19,10 +22,22 @@ const Feedback = () => {
         FirstName: firstname,
         LastName: lastname,
         Email: email,
-        Phone: phone,
+        Mobile: phone,
         Message: msg
-      });
-      alert("Message send successfully")
+      },
+
+      
+    
+    );
+      toast.success('Message send Sucessfully', {
+        position: "top-center",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "colored",
+        });
       setfirtname("");
       setlastname("");
       setemail("")
@@ -32,6 +47,15 @@ const Feedback = () => {
 
     } catch {
       console.log("message not send successfully")
+      toast.success('Enter Full Detail', {
+        position: "top-center",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "colored",
+        });
     }
   }
   return (

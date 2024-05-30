@@ -1,0 +1,24 @@
+.contain{
+    width:1200px;
+    height:600px;
+}
+.form_lower input{
+    width:45%;
+    margin:12px;
+}
+.form_lower select{
+    width:45.5%;
+    margin:12px;
+}
+#admin{
+    margin:18px;
+    background-color: rgb(58, 3, 109);
+    border: none;
+    width:155px;
+    height:30px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 1px grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: antiquewhite;
+}

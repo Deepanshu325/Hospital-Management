@@ -22,6 +22,21 @@ const Card = () => {
 
     },[])
 
+    let Delete = async (id)=>{
+      try{
+    await   axios.delete(`http://localhost:5000/doctor/${id}`,
+      {
+        headers: { 'authorization': `Bearer ${auth}` }
+      }
+      )
+      alert("Doctor Deleted Successfully")
+    }catch{
+      console.log("not found")
+      alert("doctor not found")
+    }
+
+
+    }
   
   return (
     <>
@@ -47,6 +62,7 @@ const Card = () => {
               <p><strong>DOB :</strong> {item.Dob}</p>
               <p><strong>Department :</strong>{item.Department} </p>
               <p><strong>Gender:</strong> {item.Gender}</p>
+              <button onClick={()=>Delete(item._id)}>Delete</button>
   
   
           </div>

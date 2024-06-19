@@ -131,7 +131,7 @@ const Register = () => {
         setnic(event.target.value)
       }
     }></input>
-      <input type='Date' placeholder='Date Of Birth'
+      <input type='Text' placeholder="Date Of Birth" onFocus={(event)=>(event.target.type = "Date")} onBlur={(event)=>(event.target.type = "Text")}
        value={dateofbirth}
 
       

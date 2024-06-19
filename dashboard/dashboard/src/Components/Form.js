@@ -35,6 +35,19 @@ const [FirstName , setFirstName] = useState();
     {
       headers: { 'authorization': `Bearer ${auth}` }
     });
+
+    if(!FirstName ||
+      !LastName ||
+      !Email ||
+      !MobileNumber ||
+      !Nic ||
+      !DOB ||
+      !Gender ||
+      !password){
+        alert("Please Enter All Details")
+      }else {
+
+      
     alert("New Admin Registration Successfull")
     setFirstName("");
     setLastName("");
@@ -44,6 +57,7 @@ const [FirstName , setFirstName] = useState();
     setDOB("")
     setGender("")
     setpassword("")
+      }
   }catch{
     console.log("Registration not successfull")
   }

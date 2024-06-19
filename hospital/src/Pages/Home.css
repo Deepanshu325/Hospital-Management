@@ -4,68 +4,85 @@
     background-color: rgb(250, 248, 248);
 
 }
-.Home img{
-    width:400px;
-
-}
 
 .section1{
-    width:100%;
-    display: flex;
-    flex-wrap:wrap;
+    margin-left:10%;
+    width:90%;
 }
 
 .cardd{
-    width:45%;
+    width:90%;
     height:100%;
-    display: flex;
-    padding:100px;
+    margin:auto;
+    overflow: scroll;
 }
-@media (max-Width: 1280px) {
-    
-    .cardd{
-        width:100%;
-        color:orange;
 
-    }
-  }
 .gif{
-    width:39%;
+    width:100%;
     height:100%;
-    padding-top:100px;
-    padding-bottom:100px;
+    margin:auto;
+    margin-top:12%;
+    overflow: hidden;
+
 
 }
 .section2{
-    padding-left: 100px;
-    margin-top:135px;
-    display:flex;
-    flex-wrap: wrap;
+    margin:10%;
+    width:90%;
 }
 .cardd2{
-    width:30%;
-    display: flex;
-    padding-left:100px;
-    padding-top: 70px;;
+    width:100%;
+    margin:auto;
+    margin-top:12%;
+    overflow:hidden
+
 }
 .gif2{
-    width:55%;
-    padding-top:75px;
+    width:100%;
+    margin:auto;
+    margin-top:20%;
+    overflow: hidden;
 
-}
-.section2 img{
-    width:350px;
-    height:300px;
+
 }
 .section3{
-    margin-top:135px;
-    padding:100px;
+    width:90%;
+    margin:8%;
+   
 
 }
-.imgcards{
-    display:flex;
-}
+
 .section4{
     margin-top:130px;
 }
+
+@media (min-Width: 1200px) {
+    
+    .imgcards{
+        display: flex;
+    }
+    .section1{
+        display: flex;
+    }
+    .gif{
+        width:50%;
+        position:relative;
+        bottom:80px;
+
+    }
+    .section2{
+        display:flex;
+    }
+
+    .gif2{
+        width:70%;
+        position: relative;
+    bottom:80px;
+
+
+    }
+    .cardd2{
+        width:50%;
+    }
+  }
 

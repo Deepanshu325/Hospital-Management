@@ -9,7 +9,8 @@ import Footer from '../Components/Footer'
 const Home = () => {
   return (
   <div className="Home">
-    <div className="section1">
+
+<div className="section1">
     <div className='cardd'>
     <Card heading1="Welcome to Our Hospital" heading2="Medical Institute | Your" heading3="Trusted Healthcare" heading4="Provider" info="Step into a world of care and compassion at Our Hospital. As your neighborhood healthcare provider, we're dedicated to serving you and your loved ones with excellence. From routine check-ups to specialized treatments, we're here to guide you on your journey to wellness. Explore our website to learn more about our services, meet our team, and discover how we can support your health needs. Welcome to a place where your well-being always comes first."/>
     </div>
@@ -26,6 +27,7 @@ const Home = () => {
 Through decades of challenges and triumphs, [Hospital Name] has remained steadfast in its commitment to serving the community with dignity and respect. Today, it stands as a beacon of hope and healing, touching countless lives and shaping the future of healthcare in the region."/>
     </div>
     </div>
+   
 
     <div className="section3">
       <h3>Department</h3>

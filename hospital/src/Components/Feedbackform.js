@@ -25,10 +25,11 @@ const Feedback = () => {
         Mobile: phone,
         Message: msg
       },
-
-      
-    
     );
+    if(!firstname  || !lastname || !email || !phone || !msg){
+
+         toast.error("Please Enter All Details ");
+    }else{
       toast.success('Message send Sucessfully', {
         position: "top-center",
         autoClose: 4000,
@@ -44,6 +45,10 @@ const Feedback = () => {
       setphone("");
       setmsg("")
       navigate("/")
+
+    }
+
+      
 
     } catch {
       console.log("message not send successfully")

@@ -12,8 +12,10 @@ import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <div className="App">
+         <div className='nav'>
+         <Header/>
+         </div>
 
-       <Header/>
 
        <ToastContainer
 position="top-center"

@@ -38,7 +38,6 @@ const Login = () => {
           draggable: true,
           theme: "colored",
           });
-       localStorage.setItem("user",JSON.stringify((Target.data)));
        
        localStorage.setItem("token",JSON.stringify((Target.data.auth)));
         navigate("/appointment")
@@ -72,7 +71,7 @@ const Login = () => {
         }}></input>
         </div>
         <div className="inp">
-        <input placeholder='Password'
+        <input type='password' placeholder='Password'
         value={Password}
         onChange={(event)=>{
           setpassword(event.target.value)
@@ -80,7 +79,9 @@ const Login = () => {
         </div>
 
       <div className="inp">
-      <input placeholder='Confirm Password'></input>
+      <input type='password' placeholder='Confirm Password' value={Password} onChange={(event)=>{
+        setpassword(event.target.value)
+      }}></input>
       </div>
       <p>Not Registered? <Link to="/register">Register Now</Link></p>
 

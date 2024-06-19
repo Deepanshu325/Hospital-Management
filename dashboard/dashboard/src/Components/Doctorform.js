@@ -40,6 +40,9 @@ const Doctorform = () => {
           headers: { 'authorization': `Bearer ${auth}` }
         }
       );
+      if( !FirstName|| !LastName|| !Email || !Mobile|| !Nic|| !Dob|| !Gender|| !Department|| !Password || !Photo){
+      alert("Please Enter All Details")
+    }else{
       alert("Doctor Register Successfully")
       setFirstName("");
       setLastName("");
@@ -51,9 +54,10 @@ const Doctorform = () => {
       setDepartment("");
       setPassword("");
       setPhoto("");
-
+    }
     }catch{
        console.log("No Doctor Found")
+       alert("Doctor Registration not Successfull")
     }
   }
   return (

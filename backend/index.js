@@ -56,14 +56,19 @@ app.post("/login" , async (req,resp)=>{
     }
 });
 
-app.post("/message",verifyToken, async (req, resp)=>{
+app.post("/message", async (req, resp)=>{
      let message = new Message(req.body)
+
+     if(!req.body.FirstName || !req.body.LastName || !req.body.Email || !req.body.Mobile || !req.body.Message){
+          resp.send({result : "All Fields are Required"})
+     }else{
 
      let result = await message.save();
      resp.send(result)
+     }
 });
 
-app.get('/message',verifyToken, async (req,resp)=>{
+app.get('/message', async (req,resp)=>{
 
      const message = await Message.find();
      if (message.length>0){
@@ -72,6 +77,12 @@ app.get('/message',verifyToken, async (req,resp)=>{
        resp.send({error : "No Product Found"})
      }
    })
+
+   app.delete('/message/:id',verifyToken , async (req,resp)=>{
+      let message = await Message.deleteOne({id : req.params._id})
+
+      resp.send({result : "Message Delted Successfully"})
+   });
 
 app.post("/appointment", verifyToken, async (req, resp)=>{
 
@@ -155,6 +166,16 @@ app.post("/adminlogin" , async (req, resp)=>{
 
  });
 
+ app.delete("/doctor/:id", verifyToken , async (req,resp)=>{
+
+     const doctor =  await Doctor.deleteOne({_id : req.params.id})
+
+     resp.send({result : "Doctor is Deleted Successfully"})
+    
+ })
+
+ // Token Verification 
+
  function verifyToken(req,resp,next) {
       let token = req.headers['authorization'];
 
@@ -178,7 +199,6 @@ app.post("/adminlogin" , async (req, resp)=>{
           resp.status(403).send({result:"Please add token with header"})
 
       }
-   //console.warn("middleware called",token)
      
  }
 

@@ -1,58 +1,101 @@
 .Navbar{
     width:100%;
-    height:50px;
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(250, 248, 248);
 
 }
+
+
 .Nav-list{
-    width:48rem;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
+    width:55%;
+    height:100%;
+    position:relative;
+    top:10px;
     
 }
+
 .Name{
-width:30rem;
-    padding-left:1%;
-    
+    justify-content: center;
+    align-items: center;
+width:10%;
+    padding:1%;
     height:100%;
 }
 .Login{
-    width:5rem;
-    justify-content: center;
-    align-content: center;
+    width:28%;
     height:50px;
-
 }
 .Name img{
-    height:30px;
-    width:40px;
+    height:1%;
+    width:34px;
 }
 
 .Nav-list ul{
     display: flex;
-    margin-top: 17px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    gap:30px;
+    font-size: 0.7rem;
+    gap:4%;
 }
 .Nav-list ul li a{
+    width:2%;
     text-decoration: none;
     color:black;
+}
+#visible{
+    display: none;
 }
 
 
 #login{
-    width:75px;
+    width:3.5rem;
     height:30px;
     background-color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 100%;
     color: aliceblue;
     border-radius: 14px;
     cursor: pointer;
-    border: solid black;
+    position: absolute;
+    top:2%;;
+    right:10px;
+
+}
+
+#menu{
+    border: none;
+    position:absolute;
+    right:2px;
+    cursor: pointer;
+    opacity: 0;
+}
+#cancel{
+    border: none;
+    position:absolute;
+    right:2px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.Menu{
+    background-color: white;
+    width:100%;
+    height:500px;
+
+}
+
+.Menu ul li{
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+
+    
+}
+.Menu ul li a{
+     
+    text-decoration: none;
+    color : black;
+    margin:2px;
 }

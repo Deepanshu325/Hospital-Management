@@ -1,6 +1,6 @@
 .card{
     width:295px;
-    height:350px;
+    height:430px;
     border-radius: 12px;
     box-shadow: 1px 1px 5px 2px grey;
 }
@@ -16,4 +16,15 @@
 }
 .details{
     padding-left:12px;
+}
+
+.details button{
+    width:70px;
+    height:30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: antiquewhite;
+    background-color: red;
+    border: none;
+    border-radius: 8px;
 }

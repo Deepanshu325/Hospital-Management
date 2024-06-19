@@ -14,6 +14,7 @@ const Footer = () => {
             <p>About us</p>
         </div>
         <div className="days">
+            <div>
             <h3>Hours</h3>
             <p>Monday       </p>
             <p>Tueday       </p>
@@ -21,6 +22,17 @@ const Footer = () => {
             <p>Thursday     </p>
             <p>Friday       </p>
             <p>Saturday     </p>
+            </div>
+
+            <div className="hour">
+          
+            <p>10:00AM | 11:PM</p>
+            <p>10:00AM | 11:PM</p>
+            <p>10:00AM | 11:PM</p>
+            <p>10:00AM | 11:PM</p>
+            <p>10:00AM | 11:PM</p>
+            <p>10:00AM | 11:PM</p>
+        </div>
 
 
         </div>
@@ -34,10 +46,14 @@ const Footer = () => {
             <p>10:00AM | 11:PM</p>
         </div>
         <div className='contact'>
+            <div className='con'>
             <h3>Contact Us</h3>
-            <p>999-999-9999</p>
+            <p>8700723456</p>
             <p>deepanshu@gmail.com</p>
             <p>Gurugram , Haryana</p>
+
+            </div>
+
         </div>
       
     </div>

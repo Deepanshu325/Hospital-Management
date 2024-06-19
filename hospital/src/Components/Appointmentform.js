@@ -27,11 +27,8 @@ const Appointmentform = () => {
   const [Address , setAddress] = useState();
   const Navigate = useNavigate();
 
-  const Data = JSON.parse(localStorage.getItem("user"))
-
-
   const submitt = () =>{
-    if(Data){ 
+    if(auth){ 
       try{
         axios.post("http://localhost:5000/appointment"
           
@@ -53,6 +50,19 @@ const Appointmentform = () => {
         headers: { 'authorization': `Bearer ${auth}` }
       }
         );
+        if(!FirstName || 
+          !LastName ||    
+          !Email ||     
+          !Mobile ||    
+          !NIC ||      
+          !Date || 
+          !Gender || 
+          !AppointmentDate || 
+          !Pendiatics ||  
+          !Doctor ||  
+          !Address){
+            toast.error("Please Enter All Details")
+          }else {
         toast.success('Appointment form submitted sucessfully', {
           position: "top-center",
           autoClose: 4000,
@@ -74,7 +84,7 @@ const Appointmentform = () => {
           setDoctor("")
           setAddress("")
         
-      
+          }
       }catch{
         toast.error('Appointment form is not submitted sucessfully', {
           position: "top-center",

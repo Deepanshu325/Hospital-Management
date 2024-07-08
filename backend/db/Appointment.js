@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
- const Appointment =new mongoose.Schema({
+ const Appointment = new mongoose.Schema({
     
     FirstName : String ,
     LastName  :  String ,

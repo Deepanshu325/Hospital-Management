@@ -1,23 +1,28 @@
 .infocard{
-    
+    width:100%;
     display: flex;
 }
 .box {
-    width:200px;
-    height:40px;
+    width:16.66%;
+    height:8vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 0.7rem;
 }
 
 .box select{
-    width:100px;
-    height:20px;
+    width:0.5rem;
 }
 #reject{
     color:red;
 }
 .status{
-    width:200px;
-    height:40px;
-    padding-top:16px;
+    width:16.66%;
+    height:8vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 #select{
     color:green;
@@ -26,6 +31,13 @@
 }
 .status select{
     color: red;
-    width:90px; 
+    width:4.5rem; 
+    font-size: 0.7rem;
 
+  }
+
+  @media(max-width:450px){
+    .status select{
+        width:2rem;
+    }
   }

@@ -7,13 +7,15 @@ import Doctors from './Pages/Doctors';
 import AddDoctors from './Pages/AddDoctors';
 import Messages from './Pages/Messages';
 import AddAdmins from './Pages/AddAdmins';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <Navbar/>
       <Routes>
-        
+      
 
         <Route path='/' element={<Login/>}/>
         <Route path='/dashboard' element = {<Dashboard/>}/>

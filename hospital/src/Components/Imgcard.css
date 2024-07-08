@@ -4,14 +4,13 @@
 
 }
 .Imgcard{
-    width:295px;
-    height:240px;
+    width:100%;
+    height:100%;
 }
 .Imgcard button{
-    width:200px;
-    position:relative;
-    top:180px;
-    left:37px;
+    width:10rem;
+    position: relative;
+    bottom:2rem;
     border-radius: 12px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;

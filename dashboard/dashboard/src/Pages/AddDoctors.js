@@ -6,9 +6,6 @@ import Doctorform from '../Components/Doctorform'
 const AddDoctors = () => {
   return (
     <div className='adddoctors'>
-      <div >
-      <Navbar/>
-      </div>
         
       <div className='Dform'>
         <Doctorform/>

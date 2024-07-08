@@ -1,15 +1,26 @@
 .appointmentcard{
     width:100%;
     height:100%;
-    min-height: 310px;;
     box-shadow: 1px 1px 1px 1px black;
-    padding-left: 12px;
     border-radius:14px;
+    min-height: 300px;;
 }
 .appoint {
-    display: flex;
+    width:100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1rem;
+    display:flex;
 }
 .opt{
-    width:200px;
+    width:16.66%;
+height:7vh;
+text-align: center;
+align-content: center;
+
+}
+
+@media(max-width:555px){
+    .opt{
+        font-size: 0.7rem;
+    }
 }

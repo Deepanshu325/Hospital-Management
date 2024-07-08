@@ -1,15 +1,15 @@
 .messages{
     height:100%;
-    width:100%;
+    width:87%;
     display: flex;
-    margin:-8px;
+    margin:auto;
+    position:absolute;
+    right:1%;
 }
 
 .mess{
-    padding:10px;
     width:90%;
     height:100%;
-    margin:22px;
 }
 
 .mess h1{

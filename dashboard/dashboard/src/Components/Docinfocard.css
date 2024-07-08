@@ -1,23 +1,34 @@
 .docinfo{
-    margin-left:32px;
-    margin-Top:32px;
-    width:530px;
-    height:180px;
+    width:100%;
+    min-width: 100%;
     background-color: rgb(221, 143, 221);
     border-radius: 18px;
     display: flex;
-    padding:30px;
     box-shadow: 1px 2px 5px 3px rgb(92, 90, 90);
 }
 .docinfo h1{
     color: red;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 34px;
+    font-size: 1.5rem;
 }
 .docinfo img{
+    width:50%;
     mix-blend-mode:darken;
+
 
 }
 .info{
-    width:450px;
+    width:50%;
+    font-size: 0.6rem;
+}
+
+@media(min-width:600px){
+    .docinfo{
+        width:50%;
+        background-color: rgb(221, 143, 221);
+        border-radius: 18px;
+        display: flex;
+        box-shadow: 1px 2px 5px 3px rgb(92, 90, 90);
+    }
+
 }

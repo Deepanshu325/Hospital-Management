@@ -30,8 +30,7 @@ const Doctorform = () => {
           Dob :  Dob,
           Gender:Gender,
           Department :  Department,
-          Password:Password
-          ,
+          Password:Password,
           Photo:Photo
 
       

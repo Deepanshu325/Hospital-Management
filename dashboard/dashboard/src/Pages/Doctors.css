@@ -1,8 +1,8 @@
 .doctors{
-    width:100%;
+    width:90%;
     height:100%;
     display: flex;
-    margin:-8px;
+    margin:auto;
 }
 .one{
     width:100%;

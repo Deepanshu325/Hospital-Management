@@ -6,9 +6,6 @@ import Card from '../Components/Card'
 const Doctors = () => {
   return (
     <div className='doctors'>
-            <div>
-      <Navbar/>
-      </div>
       <div className='one'>
       <Card/>
       </div>

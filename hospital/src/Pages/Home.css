@@ -1,88 +1,111 @@
-.Home{
-    width:100%;
+.Main{
+    width:96%;
     height:100%;
-    background-color: rgb(250, 248, 248);
+    padding:2%;
 
 }
-
-.section1{
-    margin-left:10%;
-    width:90%;
-}
-
-.cardd{
-    width:90%;
-    height:100%;
-    margin:auto;
-    overflow: scroll;
-}
-
-.gif{
+.first{
     width:100%;
-    height:100%;
-    margin:auto;
-    margin-top:12%;
-    overflow: hidden;
-
+    height:86vh;
+    display: flex;
+}
+.firstleft{
+    width:50%;
+    justify-content: center;
+    align-content: center;
 
 }
-.section2{
-    margin:10%;
-    width:90%;
-}
-.cardd2{
-    width:100%;
-    margin:auto;
-    margin-top:12%;
-    overflow:hidden
-
-}
-.gif2{
-    width:100%;
-    margin:auto;
-    margin-top:20%;
-    overflow: hidden;
-
-
-}
-.section3{
-    width:90%;
-    margin:8%;
-   
-
-}
-
-.section4{
-    margin-top:130px;
-}
-
-@media (min-Width: 1200px) {
+.content1{
+    width: fit-content;
+    margin: auto;
     
-    .imgcards{
-        display: flex;
-    }
-    .section1{
-        display: flex;
-    }
-    .gif{
-        width:50%;
-        position:relative;
-        bottom:80px;
+}
+.content2{
+    width: fit-content;
+    margin: auto;
 
+}
+.firstright{
+    width:50%;
+    justify-content: center;
+    align-content: center;
+}
+.second{
+    width:100%;
+    height:86vh;
+    display: flex;
+}
+
+.secondleft{
+    width:50%;
+    justify-content: center;
+    align-content: center;
+}
+.content3{
+    width: fit-content;
+    margin: auto;
+}
+.content4{
+    width: fit-content;
+    margin: auto;
+}
+.secondright{
+    width:50%;
+    justify-content: center;
+    align-content: center;
+}
+.Boxes{
+    width:100%;
+    height:100%;
+
+    display: flex;
+    gap:.3%;
+}
+.box{
+    width:24.7%;
+    height:100%;
+
+    text-align: center;
+}
+.feedbacksection{
+    width:100%;
+    height:80vh;
+    justify-content: center;
+    align-content: center;
+}
+.footersection{
+    width:100%;
+    height:100%;
+    align-content: center;
+}
+@media(max-width:843px){
+    .first{
+        display:block;
     }
-    .section2{
+    .firstleft{
+        width:100%;
+    }
+    .firstright{
+        width:100%;
+        overflow: hidden;
+    }
+    .second{
         display:flex;
+        flex-wrap: wrap-reverse;
     }
-
-    .gif2{
-        width:70%;
-        position: relative;
-    bottom:80px;
-
-
+    .secondleft{
+        width:100%;
+        overflow: hidden;
     }
-    .cardd2{
-        width:50%;
+    .secondright{
+        width:100%;
     }
-  }
-
+    .Boxes{
+        width:100%;
+        display: block;
+    }
+    .box{
+        width:fit-content;
+        margin: auto;
+    }
+}

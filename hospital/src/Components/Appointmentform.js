@@ -30,8 +30,7 @@ const Appointmentform = () => {
   const submitt = () =>{
     if(auth){ 
       try{
-        axios.post("http://localhost:5000/appointment"
-          
+        axios.post("http://localhost:5000/appointment"    
         ,
         {
         FirstName : FirstName, 

@@ -4,8 +4,11 @@ import './Imgcard.css'
 const Imgcard = (props) => {
   return (
     <div className="Imgcard">
-        <button>{props.name}</button>
-     <img src= {props.src}/> 
+        
+     <img src= {props.src} /> 
+     <div>
+     <button>{props.name}</button>
+     </div>
     </div>
   )
 }

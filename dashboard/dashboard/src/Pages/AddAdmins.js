@@ -6,9 +6,6 @@ import Form from '../Components/Form'
 const AddAdmins = () => {
   return (
     <div className='addadmins'>
-      <div className='nav'>
-      <Navbar/>
-      </div>
       <div className='form'>
     <Form/>
       </div>
